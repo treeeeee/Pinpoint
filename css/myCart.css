@@ -1,0 +1,230 @@
+/********checkout.html开始********/
+.checkout{
+    width:92%;
+    margin:0 auto;
+}
+table.timetable_sub {
+    width:92%;
+    margin:-50px auto;
+}
+.timetable_sub thead {
+    background: #F7F7F7;
+}
+.timetable_sub th{
+    text-align: center;
+    padding: 10px;
+    background:#F7F7F7;
+    color: #8E6A55;
+    font-size: 14px;
+    /*border-right:1px solid #A95832;*/
+}
+.timetable_sub td {
+    background: #FCFFFA;
+    text-align: center;
+    /*padding: 7px;*/
+    font-size: 14px;
+    color: #8E6A55;
+    /*border:1px solid #CDCDCD;*/
+}
+.timetable_sub td input[type='text']{
+    font-size: 18px;
+    border:1px solid #CACBCB;
+    border-left:0;
+    border-right:0;
+    height:32px;
+    width:50px;
+    padding:0;
+    text-align: center;
+}
+.timetable_sub td button{
+    font-size: 18px;
+    border:1px solid #CACBCB;
+    height:30px;
+    width:30px;
+    padding:0;
+    background-color: #fff;
+    box-sizing:content-box;
+}
+.rem{
+    position:relative;
+    width:100%;
+}
+.close{
+    color:#8E6A55;
+    cursor: pointer;
+    margin:auto;
+    /*-webkit-transition: color 0.2s ease-in-out;*/
+    /*-moz-transition: color 0.2s ease-in-out;*/
+    /*-o-transition: color 0.2s ease-in-out;*/
+    /*transition: color 0.2s ease-in-out;*/
+}
+.checkout-left {
+    display: flex;
+    flex-direction:row-reverse;
+    margin: 50px auto;
+    width:92%;
+}
+.checkout-left>h4{
+    color:#aaa;
+    margin: 0 auto;
+}
+.checkout-left>h4 a{
+    display: inline-block;
+    margin:0 5px;
+    padding:5px 10px;
+    background:#bbb;
+    color:#fff;
+}
+.checkout-left>div{
+    text-align: center;
+    font-size: 18px;
+}
+.checkout-left>h4 a:hover{
+    background:#D8703F;
+}
+.checkout-left span.total{
+    font-size: 20px;
+    color: #B0916A;
+    font-weight: 700;
+}
+.checkout-left>div>button{
+    display: inline-block;
+    width: 240px;
+    height: 45px;
+    overflow: hidden;
+    background-color:#B0916A;
+    border:0;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "microsoft yahei";
+    margin-left:20px;
+    outline: none;
+    border-radius:5px;
+}
+.checkout-left>div>button:hover{
+    background:#8B7860;
+    transition:all .6s linear;
+}
+td.invert-image a{
+    display:block;
+    /*border:1px solid #f1f1f1;*/
+    padding:5px;
+    width: 490px;
+    height:215px;
+    text-align:left; 
+    margin-right:-189px;
+}
+td.invert-image a>span{
+    color:#8E6A55;
+    font-size: 18px;
+    line-height:200px;
+    margin-left:10px;
+}
+td.invert-image img {
+    width:180px;
+    height:180px;
+    margin-top:3px;
+
+}
+/*transition过渡：某种样式属性（数值）在一段时间内缓慢变化*/
+td.invert-image img{
+    transition: transform 0.5s linear;
+}
+/*transform：转换（变形：放大、移动、旋转、skew）*/
+td.invert-image img:hover{
+    transform:scale(1.1);
+    /*transform:rotate(45deg);*/
+}
+.checkout-nav{
+    width:70%;
+    margin:150px auto;
+}
+.checkout-nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-nav>ul>li{
+    width:200px;
+    font-size: 24px;
+    margin-right: 40px;
+    border-bottom:7px solid #E8E1DC;
+    text-align: center;
+    line-height:50px;
+    color:#E8E1DC;
+}
+.checkout-nav>ul>li.active{
+    color:#603723;
+    border-bottom:7px solid #603723;
+}
+/*一开始隐藏确认订单页面*/
+.confirm-order{
+    width:65%;
+    margin:50px auto;
+    display:none;
+}
+.confirm-order{
+    margin-top:-70px;
+}
+.confirm-order h2{
+    padding-bottom:5px;
+    margin-bottom:10px;
+    color:#603723;
+    border-bottom:3px solid rgba(96,55,35,0.6);
+}
+.form-group:first-child>input,.form-group:nth-child(2)>input{
+    display: block;
+    width:100%;
+    height:40px;
+    border-radius: 3px;
+    outline:none;
+}
+.confirm-order input[type="radio"]:nth-child(3),.confirm-order input[type="radio"]:nth-child(4),.confirm-order input[type="radio"]:nth-child(5){
+    margin-left:80px;
+}
+#shipping-address{
+    border-radius: 3px;
+    width:100%;
+}
+#confirm-bt{
+    border-radius:5px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "microsoft yahei";
+    width:100%;
+    height:40px;
+    margin-top:20px;
+    background: #8E6A55;
+    color:#fff;
+    outline:none;
+    cursor: pointer;
+}
+.form-group>label,.form-group>p>label{
+    width:100%;
+    text-align:left;
+    display: block;
+    height:40px;
+    line-height:40px;
+}
+
+/*一开始隐藏成功提交订单页面*/
+.post-order{
+    width:1100px;
+    margin:50px auto;
+    font-size:20px;
+    display: none;
+}
+.post-order h4{
+    font-size:20px;
+    margin-bottom:10px;
+}
+.post-order h4 span{
+    font-weight:bold;
+    color:#D8703F;
+}
+.post-order p a{
+    color:#D8703F;
+}

@@ -1,0 +1,171 @@
+
+<div id="header">
+        <a href="index.html">
+            <img src="img_menu/logo.gif" alt=""/>
+        </a>
+        <ul id="head_list">
+            <li>
+                <a href="index.html" class="" id="a1">
+                    <dl>
+                        <dt>Home Page</dt>
+                        <dd>首页</dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <b></b>
+                <a href="products.html" target="_blank" id="a2">
+                    <dl>
+                        <dt>Products</dt>
+                        <dd>蛋糕名录</dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <b></b>
+                <a href="promotions.html" id="a3">
+                    <dl>
+                        <dt>Promotions</dt>
+                        <dd>最新活动</dd>
+                    </dl>
+                </a>
+            </li>
+            <li class="stroy">
+                <b></b>
+                <a href="brandStory.html" id="a4">
+                    <dl>
+                        <dt>Home Page</dt>
+                        <dd>品牌故事</dd>
+                    </dl>
+                </a>
+                <ul class="menu_bottom">
+                    <li>
+                        <a href="brandstory_page.html">品牌理念</a>
+                    </li>
+                    <li>
+                        <a href="brandstory_satrt.html">品牌起源</a>
+                    </li>
+                    <li>
+                        <a href="brandstory_food.html">顶级食材</a>
+                    </li>
+                    <li>
+                        <a href="brandstory_cake.html">蛋糕之旅</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="home_page">
+                <b></b>
+                <a href="vipcakeHome.html" id="a5">
+                    <dl>
+                        <dt>Home Page</dt>
+                        <dd>唯品客家</dd>
+                    </dl>
+                </a>
+                <ul class="menu_bottom">
+                    <li>
+                        <a href="vipcakeHome.html">VipCake见证</a>
+                    </li>
+                    <li>
+                        <a href="home_news.html">品牌新闻</a>
+                    </li>
+                    <li>
+                        <a href="home_news.html">会员广场</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div id="buttery_hatch">
+            <ul>
+                <li>
+                    <a href="login.html" target="_blank">登录</a>
+                </li>
+                <li class="lable"><b></b></li>
+                <li>
+
+                    <a href="register.html" target="_blank">注册</a>
+                </li>
+                <li class="lable"><b></b></li>
+                <li >
+
+                    <a href="#">我的唯品客</a>
+                </li>
+                <li class="lable"><b></b></li>
+                <li>
+                    <a href="#">
+                        <img src="img_menu/cico.gif" style="vertical-align: middle" alt="">
+                        0件</a>
+                </li>
+            </ul>
+            <p class="free">深圳市区免费送货上门</p>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            //登陆后头部信息修改
+ //判断用户是否登录
+    if(sessionStorage.uid){//用户已登录
+        var text='<li class="top_user"><a href="">'+sessionStorage.uname+'</a></li>'
+                +'<li class="top_quit"><a href="">退出</a></li>';
+        $('#buttery_hatch>ul>li:first').remove();
+        $('#buttery_hatch>ul>li:nth-child(2)').remove();
+        $('#buttery_hatch>ul>li:nth-child(3)').html(
+            `欢迎回来: ${sessionStorage.uname}<a href="" class="login-out">退出登录</a> `
+        );
+        $('.login-out').on('click',function(e){
+            e.preventDefault();
+            sessionStorage.clear();
+            location.href="index.html";
+        });
+    }else{//用户未登录
+       $('#buttery_hatch>ul').html(
+            `
+            <li>
+                    <a href="login.html" target="_blank">登录</a>
+                </li>
+                <li class="lable"><b></b></li>
+                <li>
+
+                    <a href="register.html" target="_blank">注册</a>
+                </li>
+                <li class="lable"><b></b></li>
+                <li >
+
+                    <a href="#">我的唯品客</a>
+                </li>
+                <li class="lable"><b></b></li>
+                <li>
+                    <a href="#">
+                        <img src="img_menu/cico.gif" style="vertical-align: middle" alt="">
+                        0件</a>
+                </li>
+            `
+       )
+    }
+            //头部弹出框
+            var lis=$("#head_list>li>a");
+// console.log(lis);
+            for(var i=0;i<lis.length;i++){
+                lis[i].onmouseover=function(){
+                    //console.log(this.children);
+//                    this.className="click";
+                    $(this).addClass("click");
+                };
+                lis[i].onmouseout=function(){
+//                    this.className="";
+                    $(this).removeClass('click');
+                };
+            }
+            var stroy=$(".stroy,.home_page");
+            for(var i=0;i<stroy.length;i++){
+                stroy[i].addEventListener('mouseover',function(){
+                    this.lastElementChild.style.display="block";
+                    //this.children[1].className="active";
+                });
+                stroy[i].addEventListener('mouseout',function(){
+                    this.lastElementChild.style.display="none";
+                    //this.children[1].className=" ";
+                })
+            }
+        });
+        //
+    </script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最新活动页面</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        #new_activty{
+            width:100%;
+            margin-top:115px;
+            position: relative;
+        }
+        h3{
+            margin-bottom:10px;
+        }
+        div.porsive{
+            position: absolute;
+            /*top:760px;*/
+            /*left:390px;*/
+            top:35%;
+            left:25%;
+        }
+        .porsive>div>form>div{
+            width:500px;
+            height:30px;
+        }
+        .porsive>div>form>div>label{
+            display: inline-block;
+            width:160px;
+            text-align:right;
+        }
+        .porsive>div>form>div>span{
+            color:#D75B54;
+        }
+    </style>
+</head>
+<body>
+<header id="top"></header>
+<div id="new_activty">
+    <img src="img_promotions/hdbg2.gif" alt="">
+    <div class="porsive">
+        <h3>请填写以下信息:</h3>
+        <div>
+            <form action="" method="post">
+                <div>
+                    <label for="company">
+                        你的公司全称：
+                    </label>
+                    <input type="text" name="company" id="company"><span>*</span>
+                </div>
+                <div>
+                    <label for="addr">
+                        你的公司地址：
+                    </label>
+                    <input type="text" id="addr" name="addr"><span>*</span>
+                </div>
+                <div>
+                    <label for="people">
+                        公司人数：
+                    </label>
+                    <input type="text" id="people" name="people"><span>*</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/promotions.js"></script>
+</body>
+</html>

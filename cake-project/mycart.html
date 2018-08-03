@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>购物车页面</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/myCart.css">
+        <link  rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+      <header id=top></header>
+      <!--购物车订单 顶部导航-->
+      <div class="checkout-nav">
+          <ul  class="checkout-nav-grids">
+              <li class="active">我的购物车</li>
+              <li>填写订单信息</li>
+              <li>完成订单</li>
+          </ul>
+      </div>
+      <!--购物车列表-->
+      <div class="checkout">
+          <div class="checkout-right">
+              <table class="timetable_sub">
+                  <thead>
+                    <tr>
+                        <th>商品信息</th>
+                        <th>属性</th>
+                        <th>单价(元)</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <!--<tr>-->
+                        <!--<td class="invert-image">-->
+                            <!--<a>-->
+                                <!--<img src="img-products/20169261530899498.jpg"/>-->
+                                <!--<span> 6.百利甜情人</span>-->
+                            <!--</a>-->
+
+                        <!--</td>-->
+
+                        <!--<td>-->
+                            <!--2.0磅/10份 标准餐具 <br>-->
+                            <!--<span>标准餐具套装(免费)</span>-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--¥308元-->
+                        <!--</td>-->
+                        <!--<td>-->
+                            <!--<button>-</button><input type="text" value="1"/><button>+</button>-->
+                        <!--</td>-->
+                        <!--<td>¥308元</td>-->
+                        <!--<td>-->
+                            <!--<div class="rem">-->
+                                <!--<a class="close">删除</a>-->
+                            <!--</div>-->
+                        <!--</td>-->
+                      <!--</tr>-->
+                  </tbody>
+              </table>
+          </div>
+          <div class="checkout-left">
+            <div>
+                共1款商品 合计(不含运费)：<span class="total">168元</span><br><br>
+                <button>继续购物</button><button class="btn2">去结算</button>
+            </div>
+        </div>
+      </div>
+      <!--填写订单信息-->
+<div class="confirm-order">
+    <h2>填写订单信息</h2>
+    <form>
+        <div class="form-group">
+            <label for="link-person">联系人</label>
+            <input type="text" class="form-control" id="link-person">
+        </div>
+        <div class="form-group">
+            <label for="link-phoneNumber">联系电话</label>
+            <input type="text" class="form-control" id="link-phoneNumber">
+        </div>
+        <div class="form-group">
+            <label for="shipping-address">收货地址</label>
+            <textarea  rows="6" class="form-control" id="shipping-address"></textarea>
+        </div>
+        <div class="form-group">
+            <p>
+                <label>支付方式</label>
+            </p>
+            <input type="radio" name="pay-method" value="1" checked>货到付款
+            <input type="radio" name="pay-method" value="2">微信支付
+            <input type="radio" name="pay-method" value="3">支付宝支付
+            <input type="radio" name="pay-method" value="4">网银支付
+        </div>
+        <input type="button" id="confirm-bt" value="确认订单">
+    </form>
+</div>
+<!--3.4、成功提交订单-->
+<div class="post-order">
+    <h4>您已成功提交订单,订单号为: <span>98414301</span></h4>
+    <p>点击 <a href="" class="goto_order">查看</a>订单</p>
+</div>
+      <footer id=footer></footer>
+      <script src="js/jquery-1.11.3.js"></script>
+      <!--<script src="js/bootstrap.min.js"></script>-->
+      <!--<script src="js/scrollAnimate.js"></script>-->
+      <script src="js/shopping_list01.js"></script>
+      <script>
+          $(function(){
+              $('#top').load("header.html");
+              $('#footer').load("footer.html");
+          })
+      </script>
+    </body>
+</html>

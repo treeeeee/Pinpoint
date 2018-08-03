@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header id="top"></header>
+    <div id="regs_form">
+        <div class="center_border">
+            <form action="" method="post" id="form_box">
+                <div>
+                    <label for="user_name">账号 :</label>
+                    <input type="text" id="user_name" name="uname" placeholder="用户名/手机号">
+                </div>
+            
+                <div>
+                    <label for="user_pwd">密码 :</label>
+                    <input type="text" id="user_pwd" name="upwd" placeholder="密码">
+                </div>
+                 <div id="tips"></div>
+                <div class="clear">
+                    <p class="lf">
+                     <input type="checkbox">记住账号
+                    </p>
+                    <p class="rt">
+                        <a href="#">忘记密码</a>
+                    </p>
+                </div>
+                <div>
+                    <input type="submit" id="login" value="登 录" class="insert">
+                </div>
+            </form>
+        </div>
+    </div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

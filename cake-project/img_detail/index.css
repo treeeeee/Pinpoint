@@ -1,0 +1,119 @@
+/* ::::: http://www.vipcake99.com/css/main.css ::::: */
+
+body, div, p, input, a, textarea, ul, li, h1, h2, h3, h4, h5, h6, dl, dt, dd, span, form { margin: 0px; padding: 0px; }
+body, input { font: 12px Microsoft Yahei,Verdana,宋体,sans-serif; }
+ul li { list-style: outside none none; }
+select, input, button, textarea { outline: medium none; }
+a { color: rgb(96, 55, 35); text-decoration: none; }
+a:hover { color: rgb(243, 172, 32); text-decoration: none; }
+.clearfix { clear: both; }
+.text3 { font-size: 14px; }
+.text4 { font-size: 20px; line-height: 40px; color: rgb(96, 55, 35); }
+.text6 { color: rgb(209, 20, 27); }
+.mg12 { margin-top: 12px; }
+.mg20 { margin-top: 20px; }
+.top { height: 97px; width: 100%; background-image: url('topbg.png'); background-repeat: repeat-x; background-position: left bottom; padding-bottom: 7px; position: fixed; left: 0px; top: 0px; z-index: 1000; }
+.menu { height: 100px; width: 1100px; margin: auto; }
+.logo { width: 170px; float: left; }
+.nav { height: 51px; width: 550px; float: left; }
+.selcity { height: 30px; padding-top: 16px; padding-left: 20px; }
+.myacct { position: relative; width: 55px; }
+.myacct span { background-image: url('cbg.gif'); position: relative; width: 45px; height: 20px; cursor: pointer; display: inline-block; color: rgb(255, 255, 255); padding-left: 10px; line-height: 20px; }
+#user_xiala { display: none; position: absolute; line-height: 24px; left: -5px; top: 20px; width: 168px; z-index: 2000; padding: 10px 15px; background-image: url('clistbg.png'); background-repeat: no-repeat; height: 48px; }
+#user_xiala a { display: inline-block; padding: 0px 5px; }
+#user_xiala a:hover { display: inline-block; background-color: rgb(96, 55, 35); color: rgb(255, 255, 255); text-decoration: none; }
+.nav_1 { margin: 0px auto; width: 630px; height: 40px; }
+.nav_1 LI { position: relative; float: left; height: 40px; z-index: 1000; }
+.nav_1 LI A { text-align: center; line-height: 22px; width: 110px; display: inline-block; height: 50px; color: rgb(96, 55, 35); font-size: 14px; }
+.nav_1 LI A SPAN { line-height: 18px; display: block; font-size: 14px; cursor: pointer; }
+.nav_1 LI A:hover { color: rgb(207, 177, 81); text-decoration: none; border-bottom: 2px solid rgb(243, 172, 32); }
+.nav_1 LI.n { width: 20px; height: 35px; background-image: url('i2.gif'); background-repeat: repeat-y; background-position: center center; }
+.nav_1 LI .aa { border-bottom: 2px solid rgb(243, 172, 32); color: rgb(207, 177, 81); }
+.nav_1 LI .nav_3 { position: absolute; width: 100px; display: none; top: 52px; left: 0px; z-index: 1000; background: rgb(253, 253, 253) none repeat scroll 0% 0%; padding: 0px 5px; }
+.nav_1 LI .nav_3 LI { height: 30px; width: 100px; border-bottom: 1px solid rgb(230, 225, 219); }
+.nav_1 LI .nav_3 LI.bdnone { border-bottom: medium none; }
+.nav_1 LI .nav_3 LI A { width: 100px; line-height: 30px; display: inline-block; height: 30px; color: rgb(188, 157, 113); font-size: 12px; border: medium none; }
+.nav_1 LI .nav_3 LI A:hover { color: rgb(51, 51, 51); }
+.topr { width: 300px; float: right; text-align: right; padding-top: 16px; }
+.topr img { margin: 10px 0px; }
+.topico { color: rgb(96, 55, 35); background-image: url('tico.gif'); background-repeat: no-repeat; background-position: left center; padding-left: 25px; }
+.mycart { background-image: url('cico.gif'); background-repeat: no-repeat; background-position: left center; display: inline-block; padding: 0px 0px 0px 25px; }
+.blank { height: 120px; }
+.mainbb { width: 1100px; margin: 10px auto auto; min-height: 400px; }
+.procont { margin-top: 20px; }
+.procontl { float: left; width: 700px; height: 550px; }
+.procontlbox { width: 550px; text-align: center; background-color: rgb(248, 248, 248); height: 550px; margin: auto; position: relative; }
+.procontlbox li { height: 550px; position: absolute; left: 0px; top: 0px; width: 550px; }
+.procontlbox img { height: 550px; width: 550px; }
+.procontr { float: right; width: 360px; }
+.prot { border-bottom: 1px solid rgb(195, 195, 195); font-size: 20px; padding: 8px 0px; color: rgb(91, 54, 9); }
+.proinfo1 { line-height: 30px; padding: 10px 0px; }
+.proinfo a { line-height: 30px; display: inline-block; width: 140px; padding: 2px 8px; height: 30px; border: 1px solid rgb(229, 220, 215); margin-right: 10px; margin-bottom: 10px; color: rgb(107, 57, 8); }
+.proinfo a:hover { border: 1px solid rgb(107, 57, 8); }
+.proinfo a.curr { border: 1px solid rgb(107, 57, 8); background-image: url('curr.gif'); background-position: right bottom; background-repeat: no-repeat; }
+.proinfo2 { line-height: 22px; padding: 10px 0px; margin-top: 15px; border-top: 1px solid rgb(229, 220, 215); color: rgb(107, 57, 8); }
+.cakeslist { margin-top: 20px; height: 160px; }
+.cakeslist li { float: left; width: 152px; height: 152px; padding: 6px 1px 1px; margin-right: 15px; background-color: rgb(245, 241, 238); cursor: pointer; }
+.cakeslist li img { width: 152px; height: 152px; }
+.cakeslist li.curr { background-color: rgb(210, 190, 181); }
+.proinfocont { background-color: rgb(248, 248, 248); padding: 25px; margin-top: 20px; color: rgb(107, 57, 6); }
+.proinfot { font-size: 16px; padding-left: 15px; border-left: 4px solid rgb(107, 57, 6); }
+.proinfobox { border-bottom: 1px solid rgb(239, 239, 239); padding: 20px; line-height: 25px; }
+.proinfol { height: 60px; }
+.proinfol li { width: 320px; float: left; line-height: 30px; height: 30px; }
+.tjtitle { border-bottom: 1px solid rgb(239, 239, 239); padding: 20px 0px; margin-top: 10px; text-align: center; }
+.tjlist { margin-top: 10px; text-align: center; }
+.tjlist li { width: 200px; float: left; height: 260px; margin-right: 20px; background-color: rgb(245, 241, 238); padding: 2px; }
+.tjlist li.mr0 { margin-right: 0px; }
+.tjlist li img { width: 200px; height: 200px; vertical-align: top; }
+.tjlist li span { line-height: 25px; margin-top: 5px; display: block; }
+.p-quantity input { width: 30px; height: 21px; line-height: 21px; padding: 0px; margin: 0px; vertical-align: middle; border: 1px solid rgb(215, 193, 182); text-align: center; }
+.p-quantity a { display: inline-block; width: 20px; height: 21px; vertical-align: middle; border: 1px solid rgb(215, 193, 182); text-align: center; font-size: 16px; font-weight: bold; }
+input.mem_btn { background: rgb(176, 145, 106) none repeat scroll 0% 0%; padding: 0px 25px; border: medium none; margin: 2px; height: 34px; color: rgb(255, 255, 255); cursor: pointer; border-radius: 2px; }
+input.mem_btn:hover { background: rgb(139, 120, 96) none repeat scroll 0% 0%; }
+input.buy_btn { font-size: 18px; background: rgb(67, 39, 25) none repeat scroll 0% 0%; padding: 0px 35px; border: medium none; height: 40px; color: rgb(255, 255, 255); cursor: pointer; border-radius: 2px; }
+input.buy_btn:hover { background: rgb(139, 120, 96) none repeat scroll 0% 0%; }
+.addpanel_overlay { z-index: 1100; position: fixed; width: 100%; bottom: 0px; display: none; background: rgb(0, 0, 0) none repeat scroll 0% 0%; height: 100%; top: 0px; right: 0px; left: 0px; opacity: 0.56; }
+.addpanel_dialog { z-index: 1200; position: fixed; margin-top: -107px; width: 555px; background: rgb(73, 25, 3) url('yj_.gif') no-repeat scroll 50% bottom; margin-left: -277px; top: 50%; left: 50%; padding-bottom: 10px; }
+.addpanel_windowname { position: relative; margin-top: -2px; height: 32px; overflow: hidden; }
+.addpanel_windowname H2 { line-height: 32px; display: inline; float: left; color: rgb(255, 255, 255); margin-left: 10px; font-size: 14px; font-weight: 100; }
+.addpanel_windowname A { margin: 10px 10px 0px 0px; width: 21px; display: inline; background: transparent url('close.gif') no-repeat scroll 0px -13px; float: right; height: 14px; cursor: pointer; }
+.addpanel_windowname A:hover { background-position: 0px 0px; cursor: pointer; }
+.addpanel_inlay { margin: 0px 10px; width: 515px; display: inline; float: left; padding: 10px; border: 1px solid rgb(204, 168, 132); background-color: rgb(255, 255, 255); }
+.city_overlay { z-index: 1100; position: fixed; width: 100%; bottom: 0px; display: none; background: rgb(0, 0, 0) none repeat scroll 0% 0%; height: 100%; top: 0px; right: 0px; left: 0px; opacity: 0.56; }
+.city_dialog { z-index: 1200; position: fixed; margin-top: -107px; width: 260px; margin-left: -177px; top: 50%; left: 50%; padding: 10px; background-color: rgb(128, 87, 43); }
+.city_inlay { width: 238px; padding: 120px 10px 10px; border: 1px solid rgb(204, 168, 132); background-image: url('wbg.gif'); background-repeat: no-repeat; background-position: center 10px; }
+.city_inlay a { padding: 5px 0px; margin: 0px 10px; display: inline-block; background-color: rgb(255, 255, 255); text-align: center; width: 96px; }
+.city_inlay a:hover { background: rgb(176, 145, 106) none repeat scroll 0% 0%; color: rgb(255, 255, 255); }
+.meminput1 { border: 1px solid rgb(204, 204, 204); padding: 2px 5px; height: 20px; line-height: 20px; background-color: rgb(249, 249, 249); }
+.meminput2 { border: 1px solid rgb(204, 204, 204); padding: 2px; line-height: 20px; background-color: rgb(249, 249, 249); }
+.footbg { height: 200px; background-image: url('fbg.gif'); background-position: left top; background-repeat: repeat-x; background-color: rgb(242, 242, 242); padding: 20px 0px; margin-top: 20px; }
+.foot { width: 1000px; margin: auto; }
+.fnav { float: left; width: 545px; height: 195px; background-image: url('flbg.gif'); background-repeat: repeat-y; background-position: right top; }
+.fnav dl { float: left; width: 109px; }
+.fnav dt { height: 30px; background-image: url('ftbg.gif'); background-repeat: no-repeat; padding-top: 37px; line-height: 30px; }
+.fnav dt.ico1 { background-position: 0px 0px; }
+.fnav dt.ico2 { background-position: -109px 0px; }
+.fnav dt.ico3 { background-position: -219px 0px; }
+.fnav dt.ico4 { background-position: -336px 0px; }
+.fnav dt.ico5 { background-position: -450px 0px; }
+.fnav dt a { font-size: 13px; color: rgb(204, 102, 0); }
+.fnav dt a:hover { text-decoration: underline; }
+.fnav dd { line-height: 25px; height: 25px; }
+.fnav dd a { text-decoration: none; }
+.fnav dd a:hover { text-decoration: underline; }
+.wx { width: 220px; float: left; height: 195px; line-height: 30px; }
+.wx * { vertical-align: middle; }
+.wx div { padding: 10px 20px; text-align: center; }
+.wxico { background-image: url('wxico.gif'); background-repeat: no-repeat; background-position: left center; height: 25px; line-height: 25px; display: inline-block; margin-top: 8px; padding-left: 30px; }
+.wbico { background-image: url('wbico.gif'); background-repeat: no-repeat; background-position: left center; height: 25px; line-height: 25px; display: inline-block; margin-top: 8px; padding-left: 30px; }
+.flx { width: 220px; float: left; height: 195px; line-height: 30px; }
+.flx * { vertical-align: middle; }
+.flx div { padding: 10px 20px; text-align: center; }
+.copyright { height: 40px; line-height: 40px; width: 1000px; margin: auto; }
+.side { position: fixed; width: 54px; height: 275px; right: 0px; top: 214px; z-index: 100; }
+.side ul li { width: 54px; height: 54px; float: left; position: relative; border-bottom: 1px solid rgb(68, 68, 68); }
+.side ul li .sidebox { position: absolute; width: 54px; height: 54px; top: 0px; right: 0px; transition: all 0.3s ease 0s; background: rgb(67, 39, 25) none repeat scroll 0% 0%; opacity: 0.8; color: rgb(255, 255, 255); font: 14px/54px "微软雅黑"; overflow: hidden; }
+.side ul li .sidetop { width: 54px; height: 54px; line-height: 54px; display: inline-block; background: rgb(67, 39, 25) none repeat scroll 0% 0%; opacity: 0.8; transition: all 0.3s ease 0s; }
+.side ul li .sidetop:hover { background: rgb(139, 120, 96) none repeat scroll 0% 0%; opacity: 1; }
+.side ul li img { float: left; border: 0px none; }

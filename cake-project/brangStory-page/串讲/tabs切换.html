@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	#container ul li{
+		float:left;
+		margin-right:20px;
+		list-style:none;
+		width:100px;
+		height:40px;
+		line-height:40px;
+	}
+	div[id^='product_']{
+		display:none;
+	}
+	#container div.show{
+		display:block;
+	}
+	
+	.active{
+		border:1px solid #f00;
+		text-align:center;
+		width:100px;
+		height:40px;
+		background-color:green;
+		color:#fff;
+		line-height:40px;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="container">
+		<ul style="overflow:hidden;">
+			<li data-i="0" class="active">商品分类</li>
+			<li data-i="1">自我介绍</li>
+			<li data-i="2">其他00</li>
+		</ul> 
+		<div id="product_a" class="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque deserunt quidem nisi eos ipsum nesciunt doloribus minima omnis ut dolorem repellendus natus modi quos accusamus assumenda voluptatibus ad libero ea.</div>
+		<div id="product_b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque deserunt quidem nisi eos ipsum nesciunt doloribus minima omnis ut dol可以分解和飞机飞机返回orem repellendus natus modi quos accusamus assumenda voluptatibus ad libero ea.</div>
+		<div id="product_c">Lorvzfdga双方的格式 em ipsum dolor sit amet, consectetur adipisicing elit. Eaque deserunt quidem nisi eos ipsum nesciunt doloribus minima omnis ut dolorem repellendus natus modi quos accusamus assumenda voluptatibus ad libero ea.</div>
+	</div>	
+		<script>
+		var id=document.getElementById("container");
+		console.log(id);
+		id.addEventListener('click',function(e){
+		   //console.log("aaa");
+		   var target=e.target;
+		   if(target.nodeName=="LI"&&target.className!="active"){
+			   var childs=target.parentNode.children;
+			   //console.log(childs);
+			   for(var i=0;i<childs.length;i++){
+					childs[i].className="";
+			   }
+			   //console.log(target.parentNode.children);
+				target.className="active";
+				var curr=document.querySelector("#container>.show");
+				console.log(curr);
+				if(curr!==null){
+					curr.className="";
+				}
+				var i=target.dataset.i;
+				//console.log(i);
+				var div=document.querySelectorAll("#container>div[id^='product_']");
+				div[i].className="show";
+		   }
+		});
+		</script>
+ </body>
+</html>

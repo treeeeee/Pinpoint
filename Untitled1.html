@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+</head>
+<style>
+#div1{
+        overflow:hidden;
+        height:300px;
+        width:500px;
+        border:1px solid red;
+        margin-top:200px;
+     
+}
+ 
+    img{
+        width:500px;
+        height:300px;
+        float:left;
+        z-index:-1;
+    }
+    #ul1{
+        margin-left:-40px;
+        margin-top:0px;
+     
+    }
+        li{
+            list-style:none;
+             
+        }
+</style>
+ 
+<body>
+<div id="div1">
+    <ul id="ul1">
+    <li><img src="img_menu/1.jpg"></li>
+    <li><img src="img_menu/20175231534828563.jpg"></li>
+    <li><img src="img_menu/1.jpg"></li>
+    <li><img src="img_menu/20175231534828563.jpg"></li>
+    <li><img src="img_menu/1.jpg"></li>
+    </ul>
+</div>
+ 
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+$(function(){
+    m=0;
+    s=setTimeout(lun,100);
+     
+    function lun(){
+        m+=10;
+        $("#ul1").css("marginTop",-m+"px");
+        if(m==300||m==600||m==900){　　　　//到达300、600、900的时候，轮播图片将停止一下
+            setTimeout(lun,2000);
+        }
+        else if(m>=1200){
+            m=0;
+            s=setTimeout(lun,2000);
+        }else{
+            s=setTimeout(lun,100);
+        }
+    }
+ 
+});
+</script>
+</html>

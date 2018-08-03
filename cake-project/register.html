@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<header id="top"></header>
+    <div id="regter">
+        <form action="" method="post" id="form_regis">
+            <table width="880" border="0" align="center" cellpadding="6" cellspacing="0" class="margin30">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            欢迎您注册网站会员，如果您已拥有账号，则可在此
+                            <a href="login.html" class="text2">登录</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  height="30" align="right">
+                            <label for="user_phone">手机号码:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="user_phone" id="user_phone" placeholder="请输入手机号码"/>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td  width="24%" height="30" align="right">
+                            <label for="user_name">会员名:</label>
+                        </td>
+                        <td width="28%">
+                            <input type="text" id="user_name" placeholder="请输入3-20字符(中文,数字,字母,下划线)">
+                        </td>
+                        <td width="48%">
+                              
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  height="30" align="right">
+                            <label for="user_email">电子邮箱:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="user_email" placeholder="请输入邮箱">
+                        </td>
+                        <td>
+                             
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td  height="30" align="right">
+                            <label for="user_pwd">登录密码:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="user_pwd" placeholder="由 3-12位数字组成">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  height="30" align="right">
+                            <label for="user_pwd1">重复输入密码:</label>
+
+                        </td>
+                        <td>
+                            <input type="password" id="user_pwd1" placeholder="再次确认您的密码">
+                        </td>
+                        <td>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  align="right" class="td_checkbox">
+                            <input type="checkbox" checked>
+                        </td>
+                        <td>
+                            <a>我已同意用户注册协议</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30" align="right">&nbsp;</td>
+                        <td   class="td_btn" colspan="2">
+                            <input type="button" value="提交注册" id="btn-reg">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

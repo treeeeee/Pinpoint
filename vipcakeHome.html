@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>唯品客家</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .cake_home{
+            width:1211px;
+            margin:auto;
+            margin-top:112px;
+        }
+        .cake_home>div>a:not(:last-child):hover{
+            color:#F3AC20;
+        }
+    </style>
+</head>
+<body>
+<header id="top"></header>
+<div class="cake_home">
+    <div style="padding-top:15px; margin-bottom: 15px;">
+        <a href="index.html">首页></a>
+        <a href="vipcakeHome.html">唯品客家></a>
+        <a>VipCake见证</a>
+    </div>
+    <img src="img_vipcakeHome/20150104210747259.gif" alt="">
+</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $(function(){
+    $('#top').load('header.html',function(data){
+        $("#head_list>li a").removeClass('active');
+        $("#a5").addClass('active');
+    });
+    $("#footer").load("footer.html");
+    $('#side').load('aside.html');
+     })
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.brand_page{
+    margin:auto;
+    width:1211px;
+    margin-top:150px;
+}
+.brand_page>div>a:not(:last-child):hover{
+    color:#F3AC20;
+}
+.home_news_active{
+    width:140px;
+    height:160px;
+    background:#F9F6F1;
+    margin-left:30px;
+}
+.home_news_active>ul>li{
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom:1px dotted #ddd;
+}
+.home_news_active>ul>li:hover{
+    background: #fff;
+}
+.news_right{
+    width:950px;
+    height:1000px;
+    margin-left:50px;
+}
+.news_right>h3{
+    color:#333;
+    border-bottom: 1px solid #ddd;
+    height:40px;
+
+}
+.news_right>ul>li{
+    height:110px;
+    padding:3px 0;
+    text-align:left;
+    line-height:25px;
+    border-bottom: 1px dotted #BA8955;
+}
+.news_right>ul>li>p{
+    padding-top:15px;
+}
+.news_right>ul>li>p>a{
+    color:#BA8955;
+}
+.news_right>ul>li>div,.news_right>ul>li>p>span{
+    color:#A5A8A8;
+}
+/*分页*/
+#fenpage{
+    height:50px;
+    width:950px;
+    text-align: center;
+    line-height: 50px;
+    padding-top:50px;
+}
+#fenpage>a{
+    border:1px solid #ddd;
+    padding:3px 5px;
+    background: #E3E3E3;
+    color:#666;
+    margin:0 3px;
+}
+#fenpage>a.active{
+    background: #603723;
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

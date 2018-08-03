@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<header id="top"></header>
+<div class="order_list">我的订单</div>
+<div class="order-right">
+    <div id="my-order" class="active">
+        <table class="my-order-list">
+            <thead>
+                <tr>
+                    <th>商品</th>
+                    <th>联系人</th>
+                    <th>手机号</th>
+                    <th>下单时间</th>
+                    <th>订单金额</th>
+                    <th>支付方式</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!--<tr class="my-order-list-number">-->
+                    <!--<td colspan="7">订单编号:9031341801</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="products-images">-->
+                        <!--<a href="${p.pid}" class="goto_single" title="${p.pname}">-->
+                            <!--<img src="images/22.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a href="${p.pid}" class="goto_single" title="${p.pname}">-->
+                            <!--<img src="images/23.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a href="${p.pid}" class="goto_single" title="${p.pname}">-->
+                            <!--<img src="images/24.jpg"/>-->
+                        <!--</a>-->
+                    <!--</td>-->
+                    <!--<td>-->
+                        <!--11-->
+                    <!--</td>-->
+                    <!--<td>123412341231</td>-->
+                    <!--<td>2017-01-11 17:20</td>-->
+                    <!--<td>￥290.00</td>-->
+                    <!--<td>货到付款</td>-->
+                    <!--<td>-->
+                        <!--<div class="operation">-->
+                            <!--<a class="close"></a>-->
+                        <!--</div>-->
+                    <!--</td>-->
+                <!--</tr>-->
+                <!--<tr class="my-order-list-number">-->
+                    <!--<td colspan="7">订单编号:9031341815</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="products-images">-->
+                        <!--<a class="goto_single">-->
+                            <!--<img src="images/22.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a class="goto_single">-->
+                            <!--<img src="images/23.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a  class="goto_single">-->
+                            <!--<img src="images/24.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a class="goto_single">-->
+                            <!--<img src="images/32.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a class="goto_single">-->
+                            <!--<img src="images/33.jpg"/>-->
+                        <!--</a>-->
+                        <!--<a class="goto_single">-->
+                            <!--<img src="images/34.jpg"/>-->
+                        <!--</a>-->
+                    <!--</td>-->
+                    <!--<td>-->
+                        <!--1123412341231-->
+                    <!--</td>-->
+                    <!--<td>11</td>-->
+                    <!--<td>2017-01-11 17:20</td>-->
+                    <!--<td>$290.00</td>-->
+                    <!--<td>货到付款</td>-->
+                    <!--<td>-->
+                        <!--<div class="operation">-->
+                            <!--<a class="close"></a>-->
+                        <!--</div>-->
+                    <!--</td>-->
+                <!--</tr>-->
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/order.js"></script>
+<script>
+    $(function(){
+        $("#top").load('header.html');
+        $('#footer').load('footer.html');
+    })
+</script>
+</body>
+</html>

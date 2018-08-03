@@ -1,0 +1,232 @@
+#common_people{
+    margin:auto;
+    width:1211px;
+    margin-top:150px;
+}
+#common_people>div>a:not(:last-child):hover{
+    color:#F3AC20;
+}
+#dtl-top{
+    width:1211px;
+    height:800px;
+    display: flex;
+    margin-left:30px;
+}
+/*左边*/
+#detail-left{
+    width:550px;
+    height:800px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+#detail-left>img{
+    width:550px;
+}
+#detail-left>ul{
+    display: flex;
+    margin-top:30px;
+}
+#detail-left>ul>li{
+    width:150px;
+    border-top:6px solid #F5F1EE;
+    margin-left:20px;
+}
+#detail-left>ul>li:hover,.hover{
+    border-top:6px solid #D2BEB5;
+}
+#detail-left>ul>li>img{
+    width:150px;
+
+}
+/*放大镜css*/
+#mask.show{display:block}
+#mask{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #ffa;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    display:none;
+}
+#superMask{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    cursor: move;
+}
+#largeDiv{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    top: 0;
+    left: 560px;
+    z-index: 9999;
+    display: none;
+}
+/*右边*/
+#detail-right{
+    width:600px;
+    height:800px;
+    margin-left:50px;
+}
+#detail-right>p{
+    color:#5B3609;
+    font-size:20px;
+    height:40px;
+    line-height: 30px;
+    border-bottom:1px solid #ddd;
+}
+#detail-right>ul>li{
+    height:50px;
+    line-height: 50px;
+    
+}
+/*//蛋糕尺寸点击效果*/
+#detail-right>ul>li>a>i{
+    display: inline-block;
+    width:15px;
+    height:19px;
+    position: absolute;
+    bottom:0;
+    right:0;
+   background:url(../img_detail/curr.gif) no-repeat;
+   /*vertical-align: middle;*/
+}
+#detail-right>ul>li>a{
+    border:1px solid #ddd;
+    padding:8px 10px;
+    margin-right:20px;
+    font-size:14px;
+    color:#5B3609;
+    position:relative;
+}
+#detail-right>ul>li>a.focus{
+    border:2px solid #5B3609;
+}
+#detail-right>ul>li>a:hover{
+     border:2px solid #5B3609;
+}
+#detail-right>ul>li:nth-child(5)>button{
+    border:1px solid #ddd;
+    background:#fff;
+    padding:2px 8px;
+}
+#detail-right>ul>li:nth-child(6)>a{
+    border:1px solid #ddd;
+    background:#432719;
+    color:#fff;
+    padding:10px 55px;
+    font-size:20px;
+}
+#detail-right>ul>li:nth-child(6)>a:hover{
+    background:rgb(139,120,96);
+}
+#detail-right>div{
+    width:400px;
+    font-size: 14px;
+    line-height:22px;
+    height:120px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+    color:#5B3609;
+    margin-top:30px;
+}
+/*商品详情*/
+#merchandise{
+    width:1211px;
+    min-height:800px;
+    margin:0 auto;
+    background: #F8F8F8;
+}
+#merchandise>div.products_info{
+    padding:20px 40px;
+}
+#merchandise>div.products_info>p{
+    font-size: 18px;
+    padding-left: 15px;
+    border-left: 4px solid #786045;
+    color:#786045;
+}
+div.products_info>ul.product_chand{
+    padding:20px 40px;
+    height:170px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom:1px dotted #ddd;
+}
+div.products_info>ul.product_chand>li{
+    width:350px;
+    line-height: 30px;
+    color:#786045;
+}
+.original{
+    height:125px;
+    color:#786045;
+    padding-top:20px;
+    line-height: 30px;
+}
+.hint{
+    padding-top:20px;
+}
+.hint>li{
+    color:#786045;
+    line-height: 30px;
+}
+/*大众点评*/
+.popular{
+    border-bottom:1px dotted #ddd;
+    overflow: hidden;
+}
+.popular>tr:first-child>td:first-child{
+    width:40%;
+}
+/*商品热卖*/
+#hot-sela{
+    width:1211px;
+    margin:20px auto;
+}
+#hot-sela>div:first-child{
+    height:90px;
+    text-align: center;
+    border-bottom: 1px dotted #ddd;
+}
+#hot-sela>div.hot-photo{
+    width:1211px;
+    height:270px;
+    display: flex;
+    margin-top:20px;
+    justify-content: space-between;
+}
+#hot-sela>div.hot-photo>dl{
+    width:210px;
+    background: #F5F1EE;
+    text-align: center;
+    overflow: hidden;
+    padding:3px;
+}
+#hot-sela>div.hot-photo>dl img{
+    width:200px;
+}
+#hot-sela>div.hot-photo>dl>dd{
+    padding-top:10px;
+    color:#603723;
+}
+#hot-sela>div.hot-photo>dl>dd>a{
+    color:#603723;
+}
+#hot-sela>div.hot-photo>dl>dd>a:hover{
+    color:#F3AC20;
+}
+
+
+
+
+
+

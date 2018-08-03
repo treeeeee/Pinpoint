@@ -1,0 +1,170 @@
+#nav_content{
+    margin:auto;
+    width:1211px;
+    height:120px;
+    background: #F9F6F1;
+    margin-top:150px;
+    margin-bottom: 30px;
+}
+#nav_content>div.category{
+    width:1211px;
+    height:40px;
+    display: flex;
+}
+#nav_content>div.category>p{
+    width:100px;
+    text-align: center;
+    line-height: 40px;
+}
+#nav_content>div.category>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav_content>div.category>ul>li{
+    padding:0 8px;
+    margin:0 3px;
+}
+#nav_content>div.category>ul>li:first-child{
+    background: #603723;
+    color:#fff;
+}
+#nav_content>div.category>ul>li:first-child>a{
+    color:#fff;
+}
+/*主体内容*/
+#cake_introduce{
+    width:1211px;
+    margin:0 auto;
+}
+#cake_introduce>ul.introduce_box{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /*justify-content: space-between;*/
+}
+#cake_introduce>ul.introduce_box>li{
+    width:350px;
+    height:500px;
+    padding:10px;
+    overflow: hidden;
+    background:#fff;
+    position:relative;
+    margin-left:29px;
+    margin-right:23px;
+}
+#cake_introduce>ul.introduce_box>li:hover{
+    background:#F8F3E7;
+    transition:all .7s linear;
+}
+ul.introduce_box>li>div>div>p{
+    color:#957860;
+    line-height: 26px;
+}
+ul.introduce_box>li>div>div:first-child{
+    text-align: center;
+}
+ul.introduce_box>li>div>div.pro{
+    height:125px;
+    border-bottom:1px solid #000;
+    padding-top:5px;
+    padding-left:13px;
+}
+ul.introduce_box>li>div>div.pro>p:first-child{
+    font-size: 18px;color:#000;
+}
+ul.introduce_box>li>div>div.pro>p:not(:first-child){
+    color:#957860;
+    font-size: 12px;
+}
+ul.introduce_box>li>div>div>p>span{
+    color:#D1355D;
+}
+.introl{
+    padding-top:8px;
+    padding-bottom: 5px;
+    padding-left:13px;
+}
+/*滑出框*/
+div.cakecart{
+    width:350px;
+    height:100px;
+    background: #957860;
+    position:absolute;
+    bottom:-100px;
+    left:0;
+}
+div.cakecart a{
+    color:#fff;
+}
+div.platform{
+    height:40px;
+    border:1px solid #fff;
+}
+div.platform>a{
+    width:83px;
+    height:40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+div.platform>a.biankuang{
+    display: inline-block;
+    height:39px;
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+}
+#cake_introduce>ul.introduce_box>li:hover div.cakecart{
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity: .9;
+    transition:all .6s linear;
+    z-index: 100;
+}
+.add_shoppingcart>a{
+    display: inline-block;
+    width:170px;
+    height:60px;
+    font-size:18px;
+    text-align: center;
+    line-height: 60px;
+}
+.cakecart>div>a:hover{
+    color:#F3AC20;
+}
+/*动画*/
+.introduce_box>li.animation{
+    -webkit-animation:bounceIn 1s .2s ease both;
+    -moz-animation:bounceIn 1s .2s ease both;}
+@-webkit-keyframes bounceIn{
+    0%{opacity:0;
+        -webkit-transform:scale(.3)}
+    50%{opacity:1;
+        -webkit-transform:scale(1.05)}
+    70%{-webkit-transform:scale(.9)}
+    100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes bounceIn{
+    0%{opacity:0;
+        -moz-transform:scale(.3)}
+    50%{opacity:1;
+        -moz-transform:scale(1.05)}
+    70%{-moz-transform:scale(.9)}
+    100%{-moz-transform:scale(1)}
+}
+/*鼠标进入动画*/
+/*.introduce_box>li:hover .animation{*/
+    /*-webkit-animation:bounce 1s .2s ease both;*/
+    /*-moz-animation:bounce 1s .2s ease both;}*/
+/*@-webkit-keyframes bounce{*/
+    /*0%,20%,50%,80%,100%{-webkit-transform:translateY(0)}*/
+    /*40%{-webkit-transform:translateY(-30px)}*/
+    /*60%{-webkit-transform:translateY(-15px)}*/
+/*}*/
+/*@-moz-keyframes bounce{*/
+    /*0%,20%,50%,80%,100%{-moz-transform:translateY(0)}*/
+    /*40%{-moz-transform:translateY(-30px)}*/
+    /*60%{-moz-transform:translateY(-15px)}*/
+/*}*/
+
